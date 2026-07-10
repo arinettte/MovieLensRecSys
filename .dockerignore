@@ -1,0 +1,27 @@
+# Данные и модели монтируются через volume
+data/
+models/
+
+# Jupyter
+notebooks/
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

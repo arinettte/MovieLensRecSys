@@ -1,0 +1,11 @@
+services:
+  recsys-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data       # датасет и parquet файлы
+      - ./models:/app/models   # обученные модели
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
